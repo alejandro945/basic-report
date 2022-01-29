@@ -19,4 +19,8 @@
     <Page Remove="Views\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
 </Project>
