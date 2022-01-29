@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="133,197,0,0" VerticalAlignment="Top"/>
-
+        <TextBlock x:Name="txtMain" HorizontalAlignment="Center" Margin="0,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="163" TextAlignment="Center" FontFamily="Century Gothic" FontSize="20"><Run Language="es-co" Text="Basic Report"/></TextBlock>
+        <Button Content="Upload Data" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" Click="OpenFile" Height="48" Width="163" FontSize="20" Background="#FFC70000" FontFamily="Century Gothic"/>
+        <DataGrid Margin="0,140,0,35" Grid.Column="5" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" FontFamily="Century Gothic">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID Departamento" Binding="{Binding IDD}" Visibility="Visible"></DataGridTextColumn>
+                <DataGridTextColumn Header="ID Municipio" Binding="{Binding IDM}" Visibility="Visible"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nombre Departamento" Binding="{Binding nameD}" Visibility="Visible"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nombre Municipio" Binding="{Binding nameM}" Visibility="Visible"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tipo" Binding="{Binding type}" Visibility="Visible"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

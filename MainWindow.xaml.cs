@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using System.IO;
+using BasicReport.Model;
 
 namespace basic_report
 {
@@ -23,6 +26,23 @@ namespace basic_report
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OpenFile(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.FileName = "Choose file";
+            if (openFileDialog.ShowDialog(this) == true)
+            {
+               // mm.addMunicipio(File.ReadAllLines(openFileDialog.FileName));
+            }
+
+
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
