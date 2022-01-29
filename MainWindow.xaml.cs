@@ -27,6 +27,7 @@ namespace basic_report
         public MainWindow()
         {
             InitializeComponent();
+            addItemsCb();
             mm = new MainModel();
         }
 
@@ -44,6 +45,25 @@ namespace basic_report
         private void showMunicipios()
         {
             gpMunicipio.DataContext = mm.municipioList;
+        }
+
+        private void SelectionType(object sender, SelectionChangedEventArgs e)
+        {
+            if(!(mm.municipioList.Count == 0))
+            {
+                var typeSelected = cbFilter.SelectedItem.ToString();
+                gpMunicipio.DataContext = mm.filterMunicipality(typeSelected + "");
+            } else
+            {
+                MessageBox.Show("Data Base empty");
+            }
+        }
+
+        private void addItemsCb()
+        {
+            cbFilter.Items.Add("Municipio");
+            cbFilter.Items.Add("Isla");
+            cbFilter.Items.Add("Área no municipalizada");
         }
     }
 }

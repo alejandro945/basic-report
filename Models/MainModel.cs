@@ -24,5 +24,18 @@ namespace basic_report.Models
                 municipioList.Add(m);
             }
         }
+
+        public List<Municipality> filterMunicipality(String type)
+        {
+            List<Municipality> listFilter = new List<Municipality>();
+            foreach(Municipality m in municipioList)
+            {
+                if(m.type == type)
+                {
+                    listFilter.Add(m);
+                }
+            }
+            return listFilter;
+        }
     }
 }

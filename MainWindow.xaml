@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TextBlock x:Name="txtMain" HorizontalAlignment="Center" Margin="0,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="163" TextAlignment="Center" FontFamily="Century Gothic" FontSize="20"><Run Language="es-co" Text="Basic Report"/></TextBlock>
-        <Button Content="Upload Data" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" Click="OpenFile" Height="48" Width="163" FontSize="20" Background="#FFC70000" FontFamily="Century Gothic"/>
+        <Button Content="Upload Data" HorizontalAlignment="Left" Margin="192,70,0,0" VerticalAlignment="Top" Click="OpenFile" Height="48" Width="163" FontSize="20" Background="#FFC70000" FontFamily="Century Gothic"/>
         <DataGrid Margin="0,140,0,35" Grid.Column="5" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" FontFamily="Century Gothic" x:Name="gpMunicipio" ItemsSource="{Binding}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID Departamento" Binding="{Binding IDD}" Visibility="Visible"></DataGridTextColumn>
@@ -18,5 +18,6 @@
                 <DataGridTextColumn Header="Tipo" Binding="{Binding type}" Visibility="Visible"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
+        <ComboBox HorizontalAlignment="Left" Margin="453,78,0,0" VerticalAlignment="Top" Width="137" Height="35" x:Name="cbFilter" SelectionChanged="SelectionType"/>
     </Grid>
 </Window>
