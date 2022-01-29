@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
-using BasicReport.Model;
+using basic_report.Models;
 
 namespace basic_report
 {
@@ -23,9 +23,11 @@ namespace basic_report
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainModel mm;
         public MainWindow()
         {
             InitializeComponent();
+            mm = new MainModel();
         }
 
         private void OpenFile(object sender, RoutedEventArgs e)
@@ -34,15 +36,14 @@ namespace basic_report
             openFileDialog.FileName = "Choose file";
             if (openFileDialog.ShowDialog(this) == true)
             {
-               // mm.addMunicipio(File.ReadAllLines(openFileDialog.FileName));
+                mm.addMunicipio(File.ReadAllLines(openFileDialog.FileName));
+                showMunicipios();
             }
-
-
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void showMunicipios()
         {
-
+            gpMunicipio.DataContext = mm.municipioList;
         }
     }
 }

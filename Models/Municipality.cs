@@ -4,49 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicReport.Model
+namespace basic_report.Models
 {
     public class Municipality
     {
 
-        private int IDD;
-        private int IDM;
-        private String nameD;
-        private String nameM;
-        private String type;
+    public String IDD { get; set; }
+    public String IDM { get; set; }
+    public String nameD { get; set; }
+    public String nameM { get; set; }
+    public String type { get; set; }
 
-        public Municipality(int IDD, int IDM, String nameD, String nameM, String type)
-        {
-            this.IDD = IDD;
-            this.IDM = IDM;
-            this.nameD = nameD;
-            this.nameM = nameM;
-            this.type = type;
-        }
-
-        public int getIDD()
-        {
-            return IDD;
-        }
-
-        public int getIDM()
-        {
-            return IDM;
-        }
-
-        public String getNameD()
-        {
-            return nameD;
-        }
-
-        public String getNameM()
-        {
-            return nameM;
-        }
-
-        public String getType()
-        {
-            return type;
-        }
+    public Municipality(String IDD, String IDM, String nameD, String nameM, String type)
+    {
+        this.IDD = IDD;
+        this.IDM = IDM;
+        this.nameD = nameD;
+        this.nameM = nameM;
+        this.type = type;
     }
+}
 }
