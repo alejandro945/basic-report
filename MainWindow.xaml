@@ -22,10 +22,10 @@
         <ComboBox HorizontalAlignment="Left" Margin="581,54,0,0" VerticalAlignment="Top" Width="137" Height="36" x:Name="cbFilter" SelectionChanged="SelectionType" FontFamily="Century Gothic"/>
         <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Bottom" Margin="64,288,64,0">
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Salesman" LabelFormatter="{Binding Formatter}"></lvc:Axis>
+                <lvc:Axis Title="Cantidad" LabelFormatter="{Binding Formatter}"></lvc:Axis>
             </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Sold Apps" Labels="{Binding Labels}"></lvc:Axis>
+                <lvc:Axis Title="Departamentos" Labels="{Binding Labels}"></lvc:Axis>
             </lvc:CartesianChart.AxisY>
             <lvc:CartesianChart.DataTooltip>
                 <lvc:DefaultTooltip SelectionMode="SharedYValues"></lvc:DefaultTooltip>

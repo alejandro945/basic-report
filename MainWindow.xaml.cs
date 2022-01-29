@@ -80,7 +80,7 @@ namespace basic_report
                 new RowSeries
                 {
                     Title = "Numero de municipios",
-                    //Values = new ChartValues{mm.countM().ToArray()},
+                    Values = new ChartValues<int>(mm.countM().ToArray()),
                 }
             };
             Labels = mm.getDepartment().ToArray();
