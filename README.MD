@@ -1,17 +1,17 @@
 ﻿<div align="center">
-<img src="https://github.com/alejandro945/game-store/blob/master/src/ui/assets/images/screens/logo.png">
+<img src="https://github.com/alejandro945/basic-report/blob/master/static/Dane.jpg">
 </div>
 <div align="center">
 <h2> Welcome to our proyect! <img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30px"></h2>
 </div>
 
-# Dane Colombia Departments Software ![Status badge](https://img.shields.io/badge/finished-red)
+# Dane Departments Software ![Status badge](https://img.shields.io/badge/finished-red)
 
 The National Administrative Department of Statistics has hired you and your partner to develop a small program that allows you to generate a series of basic reports on the country's municipalities.
 
 ## Sections 🧩
 ```
-Report
+Reports
 ```
 
 ## Changelog 🎯
@@ -20,6 +20,7 @@ Report
 * Functional requirements
 * Class Diagram
 * Screens and navigation done
+* Implementation
 * Project description
 * Read me
 
@@ -31,8 +32,6 @@ You need .NET Version 5.0
 Clarifications: By default the software handles a set of data that is found in data root directory.
 
 ## Data persistence 🔩
-
-_We handle binary files with all the current information on your system_
 
 ```
 Check the general file in data -Something.csv.
@@ -46,7 +45,7 @@ Check the general file in data -Something.csv.
 
 ## Main Screen 🚀
 * <b>Principle Screen</b> <br><br>
-![ScreenShot](https://github.com/alejandro945/game-store/blob/master/src/ui/assets/images/screens/init.png)<br><br>
+![ScreenShot](https://github.com/alejandro945/basic-report/blob/master/static/ScreenShot.png)<br><br>
 
 
 ## Build with 🛠️
@@ -63,7 +62,8 @@ _Project tools_
 * Mac
 * Linux
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 ## Authors ✒️
 
 * **Alejandro Varela**  - [Alejandro Varela](https://github.com/alejandro945)
