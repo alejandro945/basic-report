@@ -81,6 +81,7 @@ namespace basic_report
                 {
                     Title = "Numero de municipios",
                     Values = new ChartValues<int>(mm.countM().ToArray()),
+                    Fill = Brushes.DarkRed    
                 }
             };
             Labels = mm.getDepartment().ToArray();
