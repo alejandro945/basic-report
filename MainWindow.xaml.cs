@@ -30,7 +30,6 @@ namespace basic_report
         {
             InitializeComponent();
             addItemsCb();
-            barChart();
             mm = new MainModel();
         }
 
@@ -42,6 +41,7 @@ namespace basic_report
             {
                 mm.addMunicipio(File.ReadAllLines(openFileDialog.FileName));
                 showMunicipios();
+                barChart();
             }
         }
 
@@ -77,24 +77,13 @@ namespace basic_report
         {
             SeriesCollection = new SeriesCollection
             {
-                new ColumnSeries
+                new RowSeries
                 {
-                    Title = "Sapa",
-                    Values = new ChartValues<double> { 10, 50, 39, 50 }
+                    Title = "Numero de municipios",
+                    //Values = new ChartValues{mm.countM().ToArray()},
                 }
             };
-
-            //adding series will update and animate the chart automatically
-            SeriesCollection.Add(new ColumnSeries
-            {
-                Title = "2016",
-                Values = new ChartValues<double> { 11, 56, 42 }
-            });
-
-            //also adding values updates and animates the chart automatically
-            SeriesCollection[1].Values.Add(48d);
-
-            Labels = new[] { "Maria", "Susan", "Charles", "Frida" };
+            Labels = mm.getDepartment().ToArray();
             Formatter = value => value.ToString("N");
 
             DataContext = this;

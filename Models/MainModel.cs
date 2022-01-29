@@ -37,5 +37,37 @@ namespace basic_report.Models
             }
             return listFilter;
         }
+
+        public List<String> getDepartment()
+        {
+            List<String> departments = new List<string>();
+            foreach(Municipality m in municipioList)
+            {
+                if (!(departments.Contains(m.nameD))){
+                    departments.Add(m.nameD);
+                }
+            }
+            
+            return departments;
+        }
+
+        public List<int> countM()
+        {
+            List<int> list = new List<int>();
+            foreach(String m in getDepartment())
+            {
+                int count = 0;
+                foreach (Municipality mc in municipioList)
+                {
+                    if (m.Equals(mc.nameD))
+                    {
+                        count++;
+                    }
+                }
+                list.Add(count);
+            }
+            return list;
+        }
+
     }
 }
