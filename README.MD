@@ -39,9 +39,9 @@ Check the general file in data -Something.csv.
 
 ## Documentation 📃
 
-* Click here ➡️ [Diagram Class](https://github.com/alejandro945/game-store/blob/master/docs/ENGINEERING%20METHOD.pdf)
+* Click here ➡️ [Diagram Class](https://github.com/alejandro945/basic-report/blob/master/docs/CLASS_DIAGRAM.pdf)
 
-* Click here ➡️ [Requirements](https://github.com/alejandro945/game-store/blob/master/docs/FUNCTIONAL%20REQUIREMENTS%20.pdf)
+* Click here ➡️ [Requirements](https://github.com/alejandro945/game-store/blob/master/docs/FUNCTIONAL_REQUIREMENTS.pdf)
 
 ## Main Screen 🚀
 * <b>Principle Screen</b> <br><br>
